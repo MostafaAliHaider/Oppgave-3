@@ -84,6 +84,26 @@ btn5.addEventListener('click', function(e){
     }
 
 });
-//yo
 
 
+//oppgave 6
+//kilder https://stackoverflow.com/questions/34193751/js-remove-last-child
+function myFunction(){
+    let pick = document.getElementById("list");
+    pick.removeChild(pick.lastChild)
+};
+
+//failed missions
+/* let removePunkt = document.getElementById("remove-li");
+let array = document.getElementById("list");
+
+    removePunkt.addEventListener("click", function(event){
+    li.removeChild(removePunkt);
+    event.stopPropagation();
+    }); */
+
+
+/* function myFunction(){
+    let nyListe = document.getElementById("list");
+    nyListe.removeLastChild(nyListe.childNodes[0]);
+}; */
