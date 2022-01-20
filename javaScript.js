@@ -107,3 +107,25 @@ let array = document.getElementById("list");
     let nyListe = document.getElementById("list");
     nyListe.removeLastChild(nyListe.childNodes[0]);
 }; */
+
+//oppgave 7
+
+let idName = document.getElementById("name");
+let btn7 = document.getElementById("order");
+
+idName.addEventListener("input", disablebtn);
+
+function disablebtn(){
+    if (idName.value.length > 4) {
+        btn7.disabled = true;
+        btn7.style.border = "5px dotted red";
+    }else {
+        btn7.disabled = false;
+        btn7.style.border = '';
+    }
+
+}
+disablebtn();
+
+
+
