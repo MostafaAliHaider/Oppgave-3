@@ -127,5 +127,32 @@ function disablebtn(){
 }
 disablebtn();
 
+//oppgave 8
+//ul listene
+const ul8 = document.querySelector('.children');
+//knappen
+const btn8 = document.getElementById('color');
+
+
+btn8.addEventListener('click', changeColor);
+
+function changeColor() {
+
+    let odd = ul8.querySelectorAll('li:nth-child(odd)');
+    let even = ul8.querySelectorAll('li:nth-child(even)');
+    
+    odd.forEach(function(e){
+        e.style.border = '5px solid green';
+    });
+    even.forEach(function(e){
+        e.style.border = '5px solid pink';
+    });
+
+
+}
+
+
+
+
 
 
