@@ -19,18 +19,17 @@ const div = document.getElementById("app");
 /* console.log(ord); */
 
 
-if(ord.length < words[teller].length ){
 
-    words.forEach(function(){
-        if(ord.length < words[teller].length ){
-            ord = words[teller];
-            teller++;
+
+words.forEach(function(array){
+     if(ord.length < array.length ){
+            ord = array;
             div.innerHTML = ord;
             console.log(ord); 
         }
     });
 
-}
+
 
 
 
