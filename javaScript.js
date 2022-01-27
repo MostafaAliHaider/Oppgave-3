@@ -6,11 +6,11 @@ console.log("yo")
 //fjern denne teksten med knappen under
 const btn1 = document.getElementById("remove-btn");
 
-//kommentar
+//Henter id'en "remove" fra html filen
 const p1 = document.getElementById("remove");
 
 
-//Fjerne knapp 1
+//Fjerne teksten over ved å klikke på knappen
 btn1.addEventListener("click",()=>{
 p1.remove();
 });
@@ -21,7 +21,7 @@ const btn2 = document.getElementById("change-btn");
 const p2 = document.getElementById("change");
 
 btn2.addEventListener("click", ()=>{
-    p2.innerHTML = "Jeg elsker JavaScript :)"
+    p2.innerHTML = "Jeg sliter med JavaScript "
 })
 
 
@@ -65,7 +65,7 @@ const btn5 = document.getElementById("create");
 //id for inputen 
 const innput = document.getElementById("text");
 
-
+//Under har vi en funksjon som skal skrivve ut innput valuen mellom ulike attributter.
 btn5.addEventListener('click', function(e){
     
     e.preventDefault();
@@ -128,12 +128,12 @@ function disablebtn(){
 disablebtn();
 
 //oppgave 8
-//ul listene
+//velger ut classen children.
 const ul8 = document.querySelector('.children');
-//knappen
+//under henter jeg id'en color fra html'en
 const btn8 = document.getElementById('color');
 
-
+//Under brukte jeg evenListener for knappen, slik at den kjører funksjonen som skal endre fargene.
 btn8.addEventListener('click', changeColor);
 
 function changeColor() {

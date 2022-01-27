@@ -20,7 +20,7 @@ const div = document.getElementById("app");
 
 
 
-
+//Denne forEache'en skal kjøre en funksjon som igjen skal kjøre arrayen.
 words.forEach(function(array){
      if(ord.length < array.length ){
             ord = array;
